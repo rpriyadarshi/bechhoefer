@@ -1,4 +1,4 @@
-function [rd, pd, ca, ne, side] = NiceBearing
+function info = NiceBearing
 %NICEBEARING Summary of this function goes here
 %   rd:     roller diameter
 %   pd:     pitch diameter
@@ -8,10 +8,10 @@ function [rd, pd, ca, ne, side] = NiceBearing
 %   side:   inner or outer race fixed.  inner = 1, outer = 2;
 %   Eric Bechhoefer, April 10, 2009 for PHM Conference
 
-    rd = .235;
-    ca = 0;
-    ne = 8;
-    pd = 1.245;
+    info.rd = .235;
+    info.ca = 0;
+    info.ne = 8;
+    info.pd = 1.245;
 
-    side = 2;
+    info.side = 2;
 end
