@@ -1,0 +1,74 @@
+<deployment-project plugin="plugin.apptool" plugin-version="1.0">
+  <configuration build-checksum="3315480281" file="/Users/rohit/Documents/Bitbucket/bechhoefer/Analyses/Bearing Analyzer.prj" location="/Users/rohit/Documents/Bitbucket/bechhoefer/Analyses" name="Bearing Analyzer" target="target.mlapps" target-name="Package App">
+    <param.appname>Bearing Analyzer</param.appname>
+    <param.authnamewatermark>Rohit Priyadarshi</param.authnamewatermark>
+    <param.email>rohit@rishkan.com</param.email>
+    <param.company>Rohit Priyadarshi</param.company>
+    <param.icon />
+    <param.icons />
+    <param.summary>Diagnostic and Prognostics Algorithms: Original implementation by Dr Eric Bechhoefer, Chief Engineer, NRG Systems.</param.summary>
+    <param.description>Diagnostic and Prognostics Algorithms: Original implementation by Dr Eric Bechhoefer, Chief Engineer, NRG Systems. The original source code was taken and developed into an App</param.description>
+    <param.screenshot>${PROJECT_ROOT}/bearingApp.jpeg</param.screenshot>
+    <param.version>1.0</param.version>
+    <param.products.name>
+      <item>MATLAB</item>
+      <item>DSP System Toolbox</item>
+      <item>Signal Processing Toolbox</item>
+    </param.products.name>
+    <param.products.id>
+      <item>1</item>
+      <item>24</item>
+      <item>8</item>
+    </param.products.id>
+    <param.products.version>
+      <item>9.4</item>
+      <item>9.6</item>
+      <item>8.0</item>
+    </param.products.version>
+    <param.platforms />
+    <param.output>/Users/rohit/Documents/Bitbucket/bechhoefer/Package</param.output>
+    <param.guid>836198c2-6395-4c78-86c2-5bf3b316c551</param.guid>
+    <unset>
+      <param.icon />
+      <param.icons />
+      <param.version />
+      <param.platforms />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}/bearingApp.mlapp</file>
+    </fileset.main>
+    <fileset.depfun>
+      <file>${PROJECT_ROOT}/GetBearFreqRatio.m</file>
+      <file>${PROJECT_ROOT}/NiceBearing.m</file>
+      <file>${PROJECT_ROOT}/calcFaultFreq.m</file>
+      <file>${PROJECT_ROOT}/envelope1.m</file>
+      <file>${PROJECT_ROOT}/fileLoad.m</file>
+      <file>${PROJECT_ROOT}/psde.m</file>
+    </fileset.depfun>
+    <fileset.resources />
+    <fileset.package />
+    <build-deliverables>
+      <file location="/Users/rohit/Documents/Bitbucket/bechhoefer" name="Package" optional="false">/Users/rohit/Documents/Bitbucket/bechhoefer/Package</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>/Applications/MATLAB_R2018a.app</root>
+      <toolboxes />
+    </matlab>
+    <platform>
+      <unix>true</unix>
+      <mac>true</mac>
+      <windows>false</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>10.13.4</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>maci64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>
