@@ -10,3 +10,5 @@ function bearingScript()
         plotFaultFreq(fault);
     end
 end
+
+% Tookbox dependency: [fList,pList] = matlab.codetools.requiredFilesAndProducts('bearingScript.m')
