@@ -1,12 +1,15 @@
-function peaks = calcFaultPeaks(fault)
-%UNTITLED Summary of this function goes here
+function peaks = calcFaultPeaks(info, fault)
+%CALCFAULTPEAKS Summary of this function goes here
 %   Detailed explanation goes here
     [val, loc] = findpeaks(fault.spec, fault.freq);
+    peaks.avg = mean(val);
+    peaks.min = min(val);
+    peaks.max = max(val);
     
     peaks.val = [];
     peaks.loc = [];
     for i = 1:4
-        lohi = loc > fault.freqs(i) * 0.95 & loc < fault.freqs(i) * 1.05;
+        lohi = val > peaks.max * info.thr & loc > fault.freqs(i) * info.min & loc < fault.freqs(i) * info.max;
         tmp_val = val(lohi);
         tmp_loc = loc(lohi);
         for j = 1:numel(tmp_loc)

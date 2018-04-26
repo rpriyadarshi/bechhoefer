@@ -14,4 +14,8 @@ function info = NiceBearing
     info.pd = 1.245;
 
     info.side = 2;
+    
+    info.thr = 0.75;
+    info.min = 0.95;
+    info.max = 1.05;
 end

@@ -8,7 +8,7 @@ function plotFaultFreq(fault)
     hold on
     for i = 1:5
         f = fault.freqs(i);
-        plot([f f], ax(3:4),'LineWidth',2)
+        plot([f f], ax(3:4),'LineWidth', 2)
     end
     plot(fault.peaks.loc, fault.peaks.val, 'o');
     hold off

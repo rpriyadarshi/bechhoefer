@@ -13,5 +13,5 @@ function fault = calcFaultFreq(info, bearing)
 
 	[fault.spec, fault.freq] = psde(env, 2048,1/dty, 1024);
     
-    fault.peaks = calcFaultPeaks(fault);
+    fault.peaks = calcFaultPeaks(info, fault);
 end
