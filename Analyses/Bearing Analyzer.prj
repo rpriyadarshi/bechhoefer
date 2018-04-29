@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.apptool" plugin-version="1.0">
-  <configuration build-checksum="3335841531" file="/Users/rohit/Documents/Bitbucket/bechhoefer/Analyses/Bearing Analyzer.prj" location="/Users/rohit/Documents/Bitbucket/bechhoefer/Analyses" name="Bearing Analyzer" target="target.mlapps" target-name="Package App">
+  <configuration build-checksum="3451785046" file="/Users/rohit/Documents/Bitbucket/bechhoefer/Analyses/Bearing Analyzer.prj" location="/Users/rohit/Documents/Bitbucket/bechhoefer/Analyses" name="Bearing Analyzer" target="target.mlapps" target-name="Package App">
     <param.appname>Bearing Analyzer</param.appname>
     <param.authnamewatermark>Rohit Priyadarshi</param.authnamewatermark>
     <param.email>rohit@rishkan.com</param.email>
@@ -8,7 +8,7 @@
     <param.icons />
     <param.summary>Diagnostic and Prognostics Algorithms: Original implementation by Dr Eric Bechhoefer, Chief Engineer, NRG Systems.</param.summary>
     <param.description>Diagnostic and Prognostics Algorithms: Original implementation by Dr Eric Bechhoefer, Chief Engineer, NRG Systems. The original source code was taken and developed into an App</param.description>
-    <param.screenshot>${PROJECT_ROOT}/bearingApp.jpeg</param.screenshot>
+    <param.screenshot>${PROJECT_ROOT}/BallBearing.png</param.screenshot>
     <param.version>1.0</param.version>
     <param.products.name>
       <item>MATLAB</item>
@@ -38,6 +38,9 @@
       <file>${PROJECT_ROOT}/bearingApp.mlapp</file>
     </fileset.main>
     <fileset.depfun>
+      <file>${PROJECT_ROOT}/BallBearing.png</file>
+      <file>${PROJECT_ROOT}/BallBearingInnerRace.png</file>
+      <file>${PROJECT_ROOT}/BallBearingOuterRace.png</file>
       <file>${PROJECT_ROOT}/GetBearFreqRatio.m</file>
       <file>${PROJECT_ROOT}/NiceBearing.m</file>
       <file>${PROJECT_ROOT}/calcFaultFreq.m</file>
