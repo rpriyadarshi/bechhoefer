@@ -8,6 +8,7 @@ function peaks = calcFaultPeaks(info, fault)
     
     peaks.val = [];
     peaks.loc = [];
+    peaks.status = zeros(5, 1); %[cage, ball, outer, inner, shaft];
     for i = 1:4
         lohi = val > peaks.max * info.thr & loc > fault.freqs(i) * info.min & loc < fault.freqs(i) * info.max;
         tmp_val = val(lohi);
@@ -15,6 +16,9 @@ function peaks = calcFaultPeaks(info, fault)
         for j = 1:numel(tmp_loc)
             peaks.val = [peaks.val tmp_val(j)];
             peaks.loc = [peaks.loc tmp_loc(j)];
+        end
+        if (numel(tmp_val))
+            peaks.status(i) = i;
         end
     end
 end
