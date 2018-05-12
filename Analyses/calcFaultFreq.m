@@ -1,6 +1,10 @@
 function fault = calcFaultFreq(info, bearing)
 %CALCFAULTFREQ Summary of this function goes here
 %   Detailed explanation goes here
+%   sr      = Sample rate (samples/sec)
+%   gs      = Vector of 'g' (accelerometer) data
+%   load    = Load
+%   rate    = Shaft rate
 
     faultRates = ones(5, 1); %[cage, ball, outer, inner, shaft];
     for i = 1:4
