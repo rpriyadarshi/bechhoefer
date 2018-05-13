@@ -13,8 +13,8 @@ function fullFileName = fileLoad()
     end
     % Get the name of the mat file that the user wants to use.
     defaultFileName = fullfile(startingFolder, '*.mat');
-    [baseFileName, folder] = uigetfile(defaultFileName, 'Select a mat file');
-    if baseFileName == 0
+    [baseFileName, folder] = uigetfile(defaultFileName, 'Select a mat file', 'MultiSelect', 'on');
+    if (numel(baseFileName) == 0 && baseFileName == 0)
         % User clicked the Cancel button.
         return;
     end

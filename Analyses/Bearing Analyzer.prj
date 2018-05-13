@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.apptool" plugin-version="1.0">
-  <configuration build-checksum="56977079" file="/Users/rohit/Documents/Bitbucket/bechhoefer/Analyses/Bearing Analyzer.prj" location="/Users/rohit/Documents/Bitbucket/bechhoefer/Analyses" name="Bearing Analyzer" target="target.mlapps" target-name="Package App">
+  <configuration build-checksum="157463027" file="/Users/rohit/Documents/Bitbucket/bechhoefer/Analyses/Bearing Analyzer.prj" location="/Users/rohit/Documents/Bitbucket/bechhoefer/Analyses" name="Bearing Analyzer" target="target.mlapps" target-name="Package App">
     <param.appname>Bearing Analyzer</param.appname>
     <param.authnamewatermark>Rohit Priyadarshi</param.authnamewatermark>
     <param.email>rohit@rishkan.com</param.email>
