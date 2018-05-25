@@ -4,9 +4,7 @@ function bearingScript()
 
     fullFileName = fileLoad();
     if (fullFileName)
-        data = load(fullFileName);
-        info = NiceBearing();
-        fault = calcFaultFreq(info, data.bearing);
+        fault = bearingCalc(fullFileName);
         plotFaultFreq(fault);
     end
 end
