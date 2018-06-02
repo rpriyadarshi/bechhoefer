@@ -1,4 +1,4 @@
-function d = GetBearFreqRatio(rd, pd, ca, ne, type, side)
+function d = GetBearFreqRatio(rd, pd, ca, ne, type, side) %#codegen
 %GETBEARFREQRATIO Summary of this function goes here
 %   Cage passing frequency:         f/2  (1 - (d/e) cos (?) )
 %	Inner race passing frequency	bf/2 (1 + (d/e) cos (?) )

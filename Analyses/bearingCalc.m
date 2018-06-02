@@ -1,4 +1,4 @@
-function fault = bearingCalc(fullFileName)
+function fault = bearingCalc(fullFileName) %#codegen
 %BEARINGCALC Bearing fault calculator
 %   Detailed explanation goes here
     if (fullFileName)

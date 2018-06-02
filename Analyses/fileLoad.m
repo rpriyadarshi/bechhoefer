@@ -1,4 +1,4 @@
-function fullFileName = fileLoad()
+function fullFileName = fileLoad() %#codegen
 %FILELOAD Summary of this function goes here
 %   Detailed explanation goes here
 %   https://www.mathworks.com/matlabcentral/answers/30238-gui-loading-a-mat-file

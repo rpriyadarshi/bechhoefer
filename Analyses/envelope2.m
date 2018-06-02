@@ -1,4 +1,4 @@
-function [env,dty] = envelope2(data,dt,lowf,highf)
+function [env,dty] = envelope2(data, dt, lowf, highf) %#codegen
 %ENVELOPE2 Summary of this function goes here
 %   [env,dty] = envelope1(data,dt,nfilt,lowf,highf);
 %Inputs:

@@ -1,4 +1,4 @@
-function peaks = calcFaultPeaks(info, fault)
+function peaks = calcFaultPeaks(info, fault) %#codegen
 %CALCFAULTPEAKS Summary of this function goes here
 %   Detailed explanation goes here
     [val, loc] = findpeaks(fault.spec, fault.freq);

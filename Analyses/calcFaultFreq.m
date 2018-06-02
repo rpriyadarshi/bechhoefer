@@ -1,4 +1,4 @@
-function fault = calcFaultFreq(info, bearing)
+function fault = calcFaultFreq(info, bearing) %#codegen
 %CALCFAULTFREQ Summary of this function goes here
 %   Detailed explanation goes here
 %   sr      = Sample rate (samples/sec)

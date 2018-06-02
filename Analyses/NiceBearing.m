@@ -1,4 +1,4 @@
-function info = NiceBearing
+function info = NiceBearing() %#codegen
 %NICEBEARING Summary of this function goes here
 %   rd:     roller diameter
 %   pd:     pitch diameter

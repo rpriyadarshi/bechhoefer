@@ -1,4 +1,4 @@
-function [Spec, freq] = psde(x, winln,Fs, noverlap)
+function [Spec, freq] = psde(x, winln,Fs, noverlap) %#codegen
 %PSDE Summary of this function goes here
 %   [Spec, freq] = psde(x, winln,Fs, noverlap);
 %Energy power spectrual density

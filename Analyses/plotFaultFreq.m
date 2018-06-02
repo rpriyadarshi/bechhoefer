@@ -1,4 +1,4 @@
-function plotFaultFreq(fault)
+function plotFaultFreq(fault) %#codegen
 %PLOTFAULTFREQ Summary of this function goes here
 %   Detailed explanation goes here
 %   https://www.mathworks.com/help/releases/R2016b/matlab/creating_guis/graphics-support-in-app-designer.html

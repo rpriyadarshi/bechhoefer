@@ -1,4 +1,4 @@
-function bearingScript()
+function bearingScript() %#codegen
 %BEARINGSCRIPT Summary of this function goes here
 %   Detailed explanation goes here
 
