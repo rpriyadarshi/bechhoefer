@@ -1,8 +1,7 @@
-function fault = bearingCalc(fullFileName) %#codegen
+function fault = bearingCalc(data) %#codegen
 %BEARINGCALC Bearing fault calculator
 %   Detailed explanation goes here
-    if (fullFileName)
-        data = load(fullFileName);
+    if (numel(data))
         info = NiceBearing();
         fault = calcFaultFreq(info, data.bearing);
     end

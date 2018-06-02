@@ -2,9 +2,10 @@ function bearingScript() %#codegen
 %BEARINGSCRIPT Summary of this function goes here
 %   Detailed explanation goes here
 
-    fullFileName = fileLoad();
-    if (fullFileName)
-        fault = bearingCalc(fullFileName);
+    filename = fileLoad();
+    if (numel(filename))
+        data = load(filename);
+        fault = bearingCalc(data);
         plotFaultFreq(fault);
     end
 end
