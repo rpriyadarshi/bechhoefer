@@ -4,8 +4,7 @@ function bearingScript() %#codegen
 
     filename = fileLoad();
     if (numel(filename))
-        data = load(filename);
-        fault = bearingCalc(data);
+        fault = bearingCalc(filename);
         plotFaultFreq(fault);
     end
 end
