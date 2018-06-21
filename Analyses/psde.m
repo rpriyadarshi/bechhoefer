@@ -47,11 +47,13 @@ function [Spec, freq] = psde(x, winln,Fs, noverlap) %#codegen
             select = (1:nfft/2)';
         end
         Spec = Spec(select);
+        freq = (select - 1)*Fs/nfft;
+        Spec = sqrt(Spec*(4/KMU));   % normalize
     else
         select = (1:nfft)';
+        freq = (select - 1)*Fs/nfft;
+        Spec = sqrt(Spec*(4/KMU));   % normalize
     end
-    freq = (select - 1)*Fs/nfft;
 
-    Spec = sqrt(Spec*(4/KMU));   % normalize
 end
 

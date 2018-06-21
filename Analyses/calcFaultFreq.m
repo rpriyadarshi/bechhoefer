@@ -6,6 +6,8 @@ function fault = calcFaultFreq(info, bearing) %#codegen
 %   load    = Load
 %   rate    = Shaft rate
 
+    fault.peaks = struct('avg', 0, 'min', 0, 'max', 0, 'val', [], 'loc', [], 'status', zeros(5, 1));
+
     faultRates = ones(5, 1); %[cage, ball, outer, inner, shaft];
     for i = 1:4
         faultRates(i) = GetBearFreqRatio(info.rd, info.pd, info.ca, info.ne, i, info.side);
@@ -13,6 +15,7 @@ function fault = calcFaultFreq(info, bearing) %#codegen
 
     fault.freqs = faultRates * bearing.rate;
 
+    %1/bearing.sr = 2.0480e-05
     [env, dty] = envelope1(bearing.gs, 1/bearing.sr, 128, 2000, 4000);
 
 	[fault.spec, fault.freq] = psde(env, 2048,1/dty, 1024);
