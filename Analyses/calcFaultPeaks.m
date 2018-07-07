@@ -1,15 +1,15 @@
 function peaks = calcFaultPeaks(info, fault) %#codegen
 %CALCFAULTPEAKS Summary of this function goes here
 %   Detailed explanation goes here
-    peaks = struct('avg', 0, 'min', 0, 'max', 0, 'val', [], 'loc', [], 'status', zeros(5, 1));
+    peaks = struct('avg', 0, 'min', 0, 'max', 0, 'val', zeros(5, 1), 'loc', zeros(5, 1), 'status', zeros(5, 1));
     [val, loc] = findpeaks(fault.spec, fault.freq);
     peaks.avg = mean(val);
     peaks.min = min(val);
     peaks.max = max(val);
     
-    peaks.val = [];
-    peaks.loc = [];
-    peaks.status = zeros(5, 1); %[cage, ball, outer, inner, shaft];
+    %peaks.val = [];
+    %peaks.loc = [];
+    %peaks.status = zeros(5, 1); %[cage, ball, outer, inner, shaft];
     for i = 1:4
         lohi = val > peaks.max * info.thr & loc > fault.freqs(i) * info.min & loc < fault.freqs(i) * info.max;
         tmp_val = val(lohi);

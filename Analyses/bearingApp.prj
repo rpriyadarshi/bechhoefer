@@ -37,8 +37,8 @@ ${LD_LIBRARY_PATH}:MR/v94/runtime/glnxa64:MR/v94/bin/glnxa64:MR/v94/sys/os/glnxa
     <param.user.defined.mcr.options />
     <param.target.type>subtarget.standalone</param.target.type>
     <param.support.packages />
-    <param.web.mcr>true</param.web.mcr>
-    <param.package.mcr>false</param.package.mcr>
+    <param.web.mcr>false</param.web.mcr>
+    <param.package.mcr>true</param.package.mcr>
     <param.no.mcr>false</param.no.mcr>
     <param.web.mcr.name>MyAppInstaller_web</param.web.mcr.name>
     <param.package.mcr.name>MyAppInstaller_mcr</param.package.mcr.name>
@@ -54,6 +54,8 @@ ${LD_LIBRARY_PATH}:MR/v94/runtime/glnxa64:MR/v94/bin/glnxa64:MR/v94/sys/os/glnxa
       <param.icon />
       <param.icons />
       <param.version />
+      <param.authnamewatermark />
+      <param.email />
       <param.company />
       <param.summary />
       <param.description />
@@ -71,8 +73,6 @@ ${LD_LIBRARY_PATH}:MR/v94/runtime/glnxa64:MR/v94/bin/glnxa64:MR/v94/sys/os/glnxa
       <param.user.defined.mcr.options />
       <param.target.type />
       <param.support.packages />
-      <param.web.mcr />
-      <param.package.mcr />
       <param.no.mcr />
       <param.web.mcr.name />
       <param.package.mcr.name />
