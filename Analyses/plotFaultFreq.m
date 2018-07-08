@@ -10,7 +10,7 @@ function plotFaultFreq(fault) %#codegen
         f = fault.freqs(i);
         plot([f f], ax(3:4),'LineWidth', 2)
     end
-    plot(fault.peaks.loc, fault.peaks.val, 'o');
+    plot(fault.pks.loc, fault.pks.val, 'o');
     hold off
     legend('env','cage','ball','outer','inner','1/rev')
     xlabel('Hz')

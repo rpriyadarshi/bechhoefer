@@ -4,6 +4,7 @@ function fault = bearingGen() %#codegen
     data = coder.load('Data/InnerRaceFault_vload_1');
     info = NiceBearing();
     fault = calcFaultFreq(info, data.bearing);
+    printResults(fault);
     %plotFaultFreq(fault);
 end
 

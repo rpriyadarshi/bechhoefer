@@ -5,9 +5,13 @@ function fault = bearingCalc(filename) %#codegen
         data = load(filename);
         info = NiceBearing();
         fault = calcFaultFreq(info, data.bearing);
+        printResults(fault);
+        plotFaultFreq(fault);
     end
 end
 
 % data = load('Data/baseline_1.mat');
 % codegen 'bearingCalc' '-args' 'data'
-% codegen 'bearingCalc' '-args' 'Data/baselint_1.mat'
+% codegen 'bearingCalc' '-args' 'Data/baseline_1.mat'
+% codegen 'bearingCalc' '-args' 'Data/InnerRaceFault_vload_1.mat'
+% codegen 'bearingCalc' '-args' 'Data/OuterRaceFault_1.mat'
