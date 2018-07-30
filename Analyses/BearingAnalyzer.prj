@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.apptool" plugin-version="1.0">
-  <configuration build-checksum="2576516374" file="/Users/rohit/Documents/Bitbucket/bechhoefer/Analyses/BearingAnalyzer.prj" location="/Users/rohit/Documents/Bitbucket/bechhoefer/Analyses" name="BearingAnalyzer" target="target.mlapps" target-name="Package App">
+  <configuration build-checksum="3682134099" file="/Users/rohit/Documents/Bitbucket/bechhoefer/Analyses/BearingAnalyzer.prj" location="/Users/rohit/Documents/Bitbucket/bechhoefer/Analyses" name="BearingAnalyzer" target="target.mlapps" target-name="Package App">
     <param.appname>Bearing Analyzer</param.appname>
     <param.authnamewatermark>Rohit Priyadarshi</param.authnamewatermark>
     <param.email>rohit@rishkan.com</param.email>
@@ -38,11 +38,16 @@
       <file>${PROJECT_ROOT}/bearingApp.mlapp</file>
     </fileset.main>
     <fileset.depfun>
+      <file>${PROJECT_ROOT}/BallBearing v9.mp4</file>
       <file>${PROJECT_ROOT}/BallBearing.png</file>
+      <file>${PROJECT_ROOT}/BallBearingInnerRace v6.mp4</file>
       <file>${PROJECT_ROOT}/BallBearingInnerRace.png</file>
+      <file>${PROJECT_ROOT}/BallBearingNormal v3.mp4</file>
+      <file>${PROJECT_ROOT}/BallBearingOuterRace v7.mp4</file>
       <file>${PROJECT_ROOT}/BallBearingOuterRace.png</file>
       <file>${PROJECT_ROOT}/GetBearFreqRatio.m</file>
       <file>${PROJECT_ROOT}/NiceBearing.m</file>
+      <file>${PROJECT_ROOT}/PlayVideo.m</file>
       <file>${PROJECT_ROOT}/calcFaultFreq.m</file>
       <file>${PROJECT_ROOT}/calcFaultPeaks.m</file>
       <file>${PROJECT_ROOT}/envelope1.m</file>
