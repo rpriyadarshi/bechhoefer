@@ -18,7 +18,16 @@ function [env,dty] = envelope1(data, dt, nfilt, lowf, highf) %#codegen
     else
 
         ndata = length(data);
-        z = data(:) .*exp(-2 * pi * 1i * c * dt * (0:ndata-1)');
+        %z = data(:) .*exp(-2 * pi * 1i * c * dt * (0:ndata-1)');
+        z0 = (0:ndata-1)';
+        z1 = -2 * pi;
+        z2 = z1 * 1i;
+        z3 = z2 * c;
+        z4 = z3 * dt;
+        z5 = z4 * z0;
+        zm = exp(z5);
+        zn = data(:);
+        z = zn .* zm;
         bw = highf - lowf;
         b = fir1(nfilt,bw*dt);
         x = filter(b,1,z);

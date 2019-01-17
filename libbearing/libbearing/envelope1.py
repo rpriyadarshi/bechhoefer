@@ -31,7 +31,16 @@ def envelope1(data=None,dt=None,nfilt=None,lowf=None,highf=None,*args,**kwargs):
     else:
         ndata=length(data)
 # ../Analyses/envelope1.m:20
-        z=multiply(ravel(data),exp(dot(dot(dot(dot(dot(- 2,math.pi),1j),c),dt),(arange(0,ndata - 1)).T)))
+        #z=multiply(ravel(data), exp(dot(dot(dot(dot(dot(-2,math.pi),1j),c),dt),(arange(0,ndata - 1)).T)))
+        z0 = (arange(0, ndata - 1)).T
+        z1 = dot(-2, math.pi)
+        z2 = dot(z1, 1j)
+        z3 = dot(z2, c)
+        z4 = dot(z3, dt)
+        z5 = dot(z4, z0)
+        zm = exp(z5)
+        zn = ravel(data)
+        z=multiply(zn, zm)
 # ../Analyses/envelope1.m:21
         bw=highf - lowf
 # ../Analyses/envelope1.m:22
